@@ -961,7 +961,7 @@ textarea {
   border: 1px solid var(--gray400);
   width: 600px;
   height: 160px;
-  padding: 0 24px;
+  padding: 24px;
   border-radius: 4px;
   font-family: var(--roboto), sans-serif;
   font-size: 18px;
@@ -1015,6 +1015,41 @@ form {
   justify-content: center;
   align-items: center;
   gap: 24px;
+}
+
+#check{
+  width: 80px;
+  padding: 24px;
+  border-radius: 100%;
+  background:var(--white);
+  border-radius: 100%;
+  box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.05), 1px 0px 10px rgba(0, 0, 0, 0.04);
+  margin-top: -64px;
+}
+
+.thanks{
+  text-align:center;
+  font-size: 20px;
+  color: var(--gray500);
+  font-family: var(--nova-wide), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.6px;
+  line-height: 40px;
+  margin-top: 24px;
+}
+
+.thankyou-modal{
+  display: none;
+  flex-direction: column;
+max-width: 800px;
+width: 100%;
+padding: 24px 40px;
+background: var(--white);
+border-radius: 20px;
+justify-content: center;
+align-items: center;
+box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.05);
+margin-top: 32px;
 }
 
 /* footer */
