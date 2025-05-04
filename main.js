@@ -119,5 +119,5 @@ const careerHeader = document.querySelector(".career-header");
 
 valueSection.addEventListener("mouseenter", (e) => {
   careerHeader.style.marginTop = "160px";
-  careerHeader.style.transition = "all .8s ease-in";
+  careerHeader.style.transition = "all 1.5s linear";
 });
