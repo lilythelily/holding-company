@@ -2,9 +2,9 @@
 
 @font-face {
   font-family: "Novacento-wide";
-  src: url("/fonts/Novecento\ WideMedium.otf") format("opentype");
+  src: url("./fonts/Novecento\ WideMedium.otf") format("opentype");
   font-family: "Novacento-bold";
-  src: url("/fonts/Novecento\ UltraBold.otf");
+  src: url("./fonts/Novecento\ UltraBold.otf");
 }
 
 * {
@@ -121,7 +121,7 @@ header {
 
 #curv {
   position: absolute;
-  top:440px;
+  top: 440px;
   z-index: 12;
   left: 100px;
 }
@@ -130,7 +130,7 @@ header {
   height: 140px;
   background-color: var(--gray50);
   position: absolute;
-  top:476px;
+  top: 476px;
   border-radius: 40px 0 0 0;
   z-index: 3;
   box-shadow: -20px -10px 20px rgba(0, 0, 0, 0.05);
@@ -157,8 +157,7 @@ h1 {
   margin-left: 100px;
   top: 140px;
   opacity: 0.9;
-  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1),
-    0px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.5);
   line-height: 1.3;
 }
 
@@ -167,8 +166,7 @@ h1 {
   font-size: 48px;
   font-weight: 500;
   opacity: 0.9;
-  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1),
-    0px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .filled {
@@ -267,7 +265,7 @@ h2 {
   max-width: 1229px;
   height: 580px;
   border-radius: 4px;
-overflow: hidden;
+  overflow: hidden;
 }
 
 .slider-img4 {
@@ -281,7 +279,7 @@ overflow: hidden;
   max-width: 1229px;
   height: 580px;
   border-radius: 4px;
-overflow: hidden;
+  overflow: hidden;
 }
 
 .slider-img5 {
@@ -295,7 +293,21 @@ overflow: hidden;
   max-width: 1229px;
   height: 580px;
   border-radius: 4px;
-overflow: hidden;
+  overflow: hidden;
+}
+
+#next,
+#previous {
+  border: 1px solid rgb(220, 220, 220);
+  background-image: radial-gradient(var(--white), rgb(236, 241, 252));
+  border-radius: 100%;
+  padding: 24px;
+  box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.05), 1px 0px 10px rgba(0, 0, 0, 0.04);
+}
+.move {
+  display: flex;
+  padding: 24px 40px;
+  justify-content: space-between;
 }
 
 h3 {
@@ -485,7 +497,7 @@ article {
   width: 33%;
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
 .team-grid {
@@ -513,22 +525,22 @@ article {
 
 .item {
   font-family: var(--roboto), sans-serif;
-  font-size: 40px;
+  font-size: 32px;
   letter-spacing: 1.5008px;
   color: var(--gray800);
   font-weight: 400;
-  padding-bottom: 10px;
+  padding: 0 10px 10px 0;
   border-bottom: 1px solid var(--gray900);
   cursor: pointer;
 }
 
 .item2 {
   font-family: var(--roboto), sans-serif;
-  font-size: 40px;
+  font-size: 32px;
   letter-spacing: 1.5008px;
   color: var(--gray400);
   font-weight: 400;
-  padding-bottom: 10px;
+  padding: 0 10px 10px 0;
   border-bottom: 1px solid var(--gray900);
   cursor: pointer;
 }
@@ -560,7 +572,7 @@ article {
   background-blend-mode: soft-light;
   max-width: 1347px;
   height: 396px;
-  background-color: var(--gray700);
+  background-color: var(--gray800);
   position: relative;
   border-radius: 4px;
   cursor: pointer;
@@ -624,37 +636,47 @@ article {
   margin: auto;
 }
 
-.menu-card {
+/* .menu-card {
+  display: flex;
+  margin: 40px 0 160px 0;
+} */
+
+.value-card-set {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-cards {
   display: flex;
   margin: 40px 0 160px 0;
 }
 
-#card-line {
+/* #card-line {
   margin-top: 56px;
-  width: 100px;
+  width: 70px;
   border-bottom: 1px solid var(--gray50);
 }
 
 #card-line2 {
-  width: 100px;
+  width: 70px;
   border-bottom: 1px solid var(--white);
   position: absolute;
   top: 146px;
 }
 
 #card-line3 {
-  width: 100px;
+  width: 70px;
   border-bottom: 1px solid var(--gray50);
   position: absolute;
   top: 236px;
 }
 
 #card-line4 {
-  width: 100px;
+  width: 70px;
   border-bottom: 1px solid var(--white);
   position: absolute;
   top: 325px;
-}
+} */
 
 #value1 {
   z-index: 12;
@@ -686,6 +708,7 @@ article {
   background-size: cover;
   background-position: 50% 50%;
   border-radius: 4px;
+  margin-top: 300px;
 }
 
 #career-h2 {
@@ -768,8 +791,7 @@ article {
 }
 
 .black-btn:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
-    0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.05);
   font-size: 19px;
   transition: all 0.4s;
 }
@@ -789,8 +811,7 @@ article {
 
 .career-card:hover {
   background-color: var(--white);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
-    0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.05);
   border: 1px dashed var(--gray400);
 }
 
@@ -980,8 +1001,7 @@ small {
   gap: 10px;
   padding: 24px;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
-    0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.05);
   margin: 56px 0 100px 0;
 }
 
@@ -1064,9 +1084,8 @@ a {
   padding: 24px;
   border-radius: 0 0 10px 10px;
   position: absolute;
-  right: -200px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05),
-    1px 1px 10px rgba(0, 0, 0, 0.1);
+  right: 0;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05), 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 #close {
@@ -1076,17 +1095,17 @@ a {
 
 /* responsive  */
 
-@media (min-width: 1490px){
-  .separator{
+@media (min-width: 1490px) {
+  .separator {
     height: 240px;
   }
-  .venture-text{
+  .venture-text {
     margin-top: 120px;
   }
 }
 
 @media (max-width: 1280px) {
-  .hero{
+  .hero {
     height: 500px;
   }
 
@@ -1109,7 +1128,7 @@ a {
   #curv {
     display: none;
   }
- 
+
   .logo-txt {
     width: 80%;
   }
@@ -1140,7 +1159,7 @@ a {
   .top-left,
   .top-right,
   .bottom-left,
-  .bottom-right{
+  .bottom-right {
     width: 50%;
   }
 
@@ -1183,7 +1202,7 @@ a {
     height: 525px;
     border-radius: 4px;
   }
-  .bottom-right{
+  .bottom-right {
     display: none;
   }
 
@@ -1245,7 +1264,7 @@ a {
   }
   .team-grid {
     flex-direction: column;
-    gap:40px;
+    gap: 40px;
   }
 
   #wassim,
@@ -1255,17 +1274,15 @@ a {
     margin: 0 auto;
   }
 
- 
-
   .career-slider {
     margin-top: 40px;
   }
-  .info-left{
+  .info-left {
     justify-content: center;
     align-items: center;
     padding: 0;
   }
-  .info-right{
+  .info-right {
     border-left: none;
     margin: 16px auto;
     padding: 0;
@@ -1307,7 +1324,7 @@ a {
     top: 40px;
     font-size: 32px;
   }
-  .hero-span{
+  .hero-span {
     font-size: 20px;
   }
   .filled {
@@ -1321,7 +1338,7 @@ a {
   #hero-icon {
     display: none;
   }
-  .hero{
+  .hero {
     height: 340px;
   }
   h2 {
@@ -1339,20 +1356,20 @@ a {
   .slider-img2,
   .slider-img3,
   .slider-img4,
-  .slider-img5{
-    height: 380px; 
+  .slider-img5 {
+    height: 440px;
   }
 
-#value-title{
-text-align: center;
-}
+  #value-title {
+    text-align: center;
+  }
 
   .value-items {
     width: 100%;
     flex-direction: row;
     overflow: auto;
   }
-  .menu-card {
+  .item-cards {
     flex-direction: column;
     gap: 24px;
   }
@@ -1364,7 +1381,7 @@ text-align: center;
 
   .career-header {
     background: none;
-    height: 150px
+    height: 150px;
   }
   .career-text {
     color: var(--gray700);
@@ -1384,7 +1401,7 @@ text-align: center;
     font-size: 28px;
   }
 
-  input{
+  input {
     height: 56px;
   }
 }
